@@ -1,5 +1,4 @@
 module.exports = {
-  base: '/d2-admin-doc/',
   locales: {
     '/': {
       lang: 'en-US',
@@ -12,9 +11,13 @@ module.exports = {
       description: '优雅的管理系统前端集成方案'
     }
   },
+  head: [
+    ['link', { rel: 'icon', href: `/logo@2x.png` }],
+    ['script', {}, 'var _hmt = _hmt || [];(function() {var hm = document.createElement("script");hm.src = "https://hm.baidu.com/hm.js?be9d34853430c136b5d62c3081d556a5";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm, s);})();']
+  ],
   themeConfig: {
     // 项目仓库地址
-    repo: 'https://github.com/FairyEver/d2-admin',
+    repo: 'https://github.com/d2-projects/d2-admin',
     // 自定义仓库链接文字
     repoLabel: '查看源码',
     // 文档不是放在仓库的根目录下
@@ -29,8 +32,7 @@ module.exports = {
         editLinkText: 'Edit this page on GitHub',
         lastUpdated: 'Last update',
         nav: [
-          { text: 'preview', link: 'https://fairyever.gitee.io/d2-admin-preview/#/index' },
-          { text: 'download', link: 'https://github.com/FairyEver/d2-admin/releases' }
+          { text: 'preview', link: 'https://fairyever.gitee.io/d2-admin-preview/#/index' }
         ]
       },
       '/zh/': {
@@ -42,14 +44,15 @@ module.exports = {
           { text: '指南', link: '/zh/guide/' },
           { text: '插件', link: '/zh/plugins/' },
           { text: '组件', link: '/zh/components/' },
+          { text: '文章', link: '/zh/article/' },
           { text: '其它', link: '/zh/others/' },
-          { text: '预览', link: 'https://fairyever.gitee.io/d2-admin-preview/#/index' },
-          { text: '下载', link: 'https://github.com/FairyEver/d2-admin/releases' }
+          { text: '预览', link: 'https://fairyever.gitee.io/d2-admin-preview/#/index' }
         ],
         sidebar: {
           '/zh/guide/': sideBarGuide('指南'),
           '/zh/plugins/': sideBarPlugins('插件'),
           '/zh/components/': sideBarComponents('组件'),
+          '/zh/article/': sideBarArticle('文章'),
           '/zh/others/': sideBarOthers('其它')
         }
       }
@@ -98,6 +101,20 @@ function sideBarComponents (title) {
         'icon-svg',
         'icon',
         'markdown'
+      ]
+    }
+  ]
+}
+
+function sideBarArticle (title) {
+  return [
+    {
+      title,
+      collapsable: false,
+      children: [
+        '',
+        'update/1.1.4',
+        'update/0.0.0'
       ]
     }
   ]

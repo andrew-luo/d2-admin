@@ -2,34 +2,46 @@
 
 D2Admin 是一个开源的管理系统前端集成方案
 
-[Github仓库](https://github.com/FairyEver/d2-admin) - [码云仓库](https://gitee.com/fairyever/d2-admin) - [预览地址](https://fairyever.gitee.io/d2-admin-preview)
-
 <div>
-  <iframe src="//ghbtns.com/github-btn.html?user=FairyEver&repo=d2-admin&type=star&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
-  <iframe src="//ghbtns.com/github-btn.html?user=FairyEver&repo=d2-admin&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
+  <iframe src="//ghbtns.com/github-btn.html?user=d2-projects&repo=d2-admin&type=star&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
+  <iframe src="//ghbtns.com/github-btn.html?user=d2-projects&repo=d2-admin&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
 </div>
 
-::: tip
-因为现在集成了很多的插件和组件，首次加载会占用很多的时间，虽然已经做了首屏加载动画，但还是建议您在发布之前一定要删除没有用到的代码，比如项目没有用到图表、示例、插件组件。
-:::
+本项目仓库在 Github 和 Gitee 同步发布
 
-D2Admin 是完全开源免费的管理系统集成方案，由 [FairyEver](https://github.com/FairyEver) 在工作之余完全由兴趣驱动完成，如果你也一样喜欢前端开发，欢迎加入我们的讨论/学习群，群内可以`提问答疑`，`分享学习资料`或者随便扯淡
+[中文文档](http://d2admin.fairyever.com/zh/)
 
-**QQ群 806395827**
+**完整版**
 
-<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=48323a4ed7a059a5d75f4a81586161ee60e495ab31905f8daaee8939ecacb363"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="D2Admin | js | vue 交流" title="D2Admin | js | vue 交流"></a>
+[Github 仓库](https://github.com/d2-projects/d2-admin) | 
+[码云仓库](https://gitee.com/fairyever/d2-admin) | 
+[预览地址](https://fairyever.gitee.io/d2-admin-preview)
 
-**微信群**
+**简化版模板**
 
-作者微信 liyang1711467488
+[Github 仓库](https://github.com/d2-projects/d2-admin-start-kit) | 
+[码云仓库](https://gitee.com/fairyever/d2-admin-start-kit) | 
+[预览地址](https://fairyever.gitee.io/d2-admin-start-kit-preview/#/index)
 
-> 微信群需要先加群主才可以拉进群 PS 微信群交流不太方便，建议QQ群
+![preview](./image/preview@2x.png)
+
+D2Admin 完整版集成了很多的插件和组件，首次加载会占用很多的时间，所以加入了首屏加载动画。
+
+如果您欣赏 D2Admin 的设计风格，希望基于它开发您的管理系统，**建议使用 [d2-admin-start-kit 简化模板](https://github.com/d2-projects/d2-admin-start-kit)**，简化版模板保留了所有的系统功能，包括登陆注销，主题切换，图标，数据持久化等。其它不必要的组件和插件您可以参照 D2Admin 完整版自行加入。
+
+如果您执意在完整版基础上开发，请您在发布之前一定要删除没有用到的代码，比如项目没有用到图表、示例、插件组件。
+
+D2Admin 是完全开源免费的管理系统集成方案，由 [FairyEver](https://github.com/FairyEver) 工作之余完完成（希望您看到这里，可以移步 [Github](https://github.com/d2-projects/d2-admin) 点个 star 支持我），如果你也一样喜欢前端开发，欢迎加入我们的讨论/学习群，群内可以`提问答疑`，`分享学习资料`。
+
+![preview](./image/join@2x.png)
 
 ::: tip Thanks
-D2Admin 创建于2018年1月14日零点51分，在2018年5月26日正式发布，中间断断续续做了四个多月，发布一个月内收获将近 700star，在此对支持我的朋友表示感谢，D2Admin 将会保持更新，如果你有想法、建议、或者问题欢迎加群讨论
+D2Admin 创建于2018年1月14日零点51分，四个月后在2018年5月26日正式发布，39天时间 star 突破 1k ，在此对所有的 D2Admin 支持者表示感谢，项目将会保持更新，如果你有想法、建议、或者问题欢迎加群讨论
 
-—— 2018年6月20日
+—— 2018年7月5日
 :::
+
+> 1000 star 后 D2Admin 现已由一人维护改为归属于 [D2 Projects Organizations](https://github.com/d2-projects) 由多人维护
 
 ## 功能
 
@@ -92,6 +104,7 @@ D2Admin 仍然处于开发中，这里有一些暂时的计划：
 * socket 连接
 * 浏览器版本提示
 * 日志控制台
+* d2-container 组件 ghost 模式和 full 模式合并
 * `1.1.4 已完成` 自定义滚动条
 * `1.1.4 已完成` 多 tab 页结构
 * `1.1.3 已完成` 更换图表库
@@ -139,8 +152,6 @@ D2Admin 仍然处于开发中，这里有一些暂时的计划：
 ├─ .postcssrc.js
 ├─ LICENSE
 ├─ README.md
-├─ deploy.sh
-├─ design.sketch // 设计文件
 ├─ index.html
 └─ package.json
 ```
@@ -149,11 +160,11 @@ D2Admin 仍然处于开发中，这里有一些暂时的计划：
 
 有两种方式可以获得 D2Admin 的代码
 
-* 在 [releases](https://github.com/FairyEver/d2-admin/releases) 页面下载最新的发行版。发行版一般是完成了某个大升级或者修复重要 bug 后发布的压缩包，你可以下载下来直接使用
+* 在 [releases](https://github.com/d2-projects/d2-admin/releases) 页面下载最新的发行版。发行版一般是完成了某个大升级或者修复重要 bug 后发布的压缩包，你可以下载下来直接使用
 
 * Fork 仓库到你的 github 然后克隆到本地，然后使用 master 分支继续你的开发。这种方式得到的是最新的代码，但是会有未完成的新功能。**不建议使用这种方式**
 
-* 由于 github 访问较慢，推荐前往码云仓库下载 [gitee.com/fairyever/d2-admin](https://gitee.com/fairyever/d2-admin)，码云上的仓库**在每次发布版本才会更新**，所以如果你选择此方法，请直接 fork 仓库并克隆到本地
+* 由于 github 访问较慢，推荐前往码云仓库下载 [gitee.com/fairyever/d2-admin](https://gitee.com/fairyever/d2-admin)，码云上的仓库**在每次发布版本或者修复 bug 才会更新**，所以如果你选择此方法，请直接 fork 仓库并克隆到本地
 
 > 码云的仓库由 github 同步，但是发行版和标签同步有一些问题，所以推荐直接 fork 仓库
 
